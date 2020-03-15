@@ -283,10 +283,9 @@ def setDifficulty(difficulty):
 window = tk.Tk()
 window.title("Sudoku Settings")
 tk.Label(window, text="Choose Difficulty: ", pady = 10).pack()
-    
-tk.Button(window,text="easy",width=20,padx=20,command=lambda: setDifficulty("easy")).pack(fill="x")
-tk.Button(window,text="medium",width=20,padx=20,command=lambda: setDifficulty("medium")).pack(fill="x")
-tk.Button(window,text="hard",width=20,padx=20,command=lambda: setDifficulty("hard")).pack(fill="x")
+
+for difficulty in ["easy","medium","hard"]:
+    tk.Button(window,text=difficulty,width=20,padx=20,command=lambda: setDifficulty(difficulty)).pack(fill="x")
 
 window.mainloop()
 newGame(mydifficulty)
