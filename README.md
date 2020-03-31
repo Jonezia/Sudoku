@@ -9,3 +9,6 @@ Commands:
 - Press enter/return with cell highlighted to submit number
 - Wrong answers are highlighted in red and increment mistakes by 1
 - Press space to show the full solution
+
+Demo link:
+https://youtu.be/54sWD-fZCcM
